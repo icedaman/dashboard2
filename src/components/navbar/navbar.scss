@@ -1,3 +1,63 @@
+@import "../../styles/variables.scss";
+
 .navbar{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
+  .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+  }
+
+  .links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+    img{
+      padding: 5px;
+      border-radius: 50%;
+      &:hover{
+        background-color: $soft-bg;
+      }
+    }
+
+    .notification{
+      position: relative;
+
+      span{
+        background-color: red;
+        color: white;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+    }
+    
+    .user{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
 }

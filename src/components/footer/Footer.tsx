@@ -2,7 +2,10 @@ import './footer.scss';
 
 const Footer = () => {
   return (
-    <div className='footer'>Footer</div>
+    <div className='footer'>
+      <span>Store Admin</span>
+      <span>João's Admin Dashboard</span>
+    </div>
   )
 }
 
